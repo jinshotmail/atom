@@ -69,9 +69,9 @@ describe('TextEditorRegistry', function() {
   });
 
   describe('.build', function() {
-    it('constructs a TextEditor with the right parameters based on its path and text', async function() {
-      await atom.packages.activatePackage('language-javascript');
-      await atom.packages.activatePackage('language-c');
+    it('constructs a TextEditor with the right parameters based on its path and text', function() {
+       // await atom.packages.activatePackage('language-javascript');
+      // await atom.packages.activatePackage('language-c');
 
       atom.config.set('editor.tabLength', 8, { scope: '.source.js' });
 
